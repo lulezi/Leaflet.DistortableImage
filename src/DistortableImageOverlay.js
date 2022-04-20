@@ -1,4 +1,6 @@
-L.DistortableImageOverlay = L.ImageOverlay.extend({
+import * as L from "leaflet/src/Leaflet";
+
+export const DistortableImageOverlay = L.ImageOverlay.extend({
 
   options: {
     height: 200,
@@ -530,8 +532,8 @@ L.DistortableImageOverlay = L.ImageOverlay.extend({
   },
 });
 
-L.distortableImageOverlay = function(id, options) {
-  return new L.DistortableImageOverlay(id, options);
+export const distortableImageOverlay = function(id, options) {
+  return new DistortableImageOverlay(id, options);
 };
 
 L.Map.addInitHook(function() {

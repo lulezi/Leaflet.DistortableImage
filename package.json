@@ -20,6 +20,7 @@
     "type": "git",
     "url": "https://github.com/publiclab/Leaflet.DistortableImage.git"
   },
+  "type": "module",
   "keywords": [
     "leaflet",
     "mapknitter",
